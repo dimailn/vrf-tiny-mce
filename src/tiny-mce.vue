@@ -36,7 +36,7 @@ export default {
         )
     }
 
-    @$vrfTinyMCE.TinyMce.init(options)
+    @$vrfTinyMCE.TinyMCE.init(options)
 
   beforeDestroy: ->
     $(@$refs.tiny).tinyMCE('destroy')
