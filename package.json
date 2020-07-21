@@ -17,7 +17,7 @@
   "license": "MIT",
   "dependencies": {
     "lodash.debounce": "^4.0.8",
-    "vrf": "^0.7.1"
+    "vrf": "^0.7.3"
   },
   "devDependencies": {
     "autoprefixer": "^7.1.2",
