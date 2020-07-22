@@ -20,3 +20,17 @@ import VrfTinyMCE from 'vrf-tiny-mce'
 Vue.use(VrfTinyMCE, { TinyMCE: tinyMCE, options: tinymceOptions })
 
 ```
+
+... and use it!
+
+```vue
+
+<template>
+
+<rf-form name="Page">
+  <rf-tiny-mce name="content" />
+</rf-form>
+
+</template>
+
+```
