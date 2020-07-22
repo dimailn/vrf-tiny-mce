@@ -15,6 +15,10 @@
   },
   "author": "Dmitry Sadovsky",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dimailn/vrf-tiny-mce"
+  },
   "dependencies": {
     "lodash.debounce": "^4.0.8",
     "vrf": "^0.7.3"
