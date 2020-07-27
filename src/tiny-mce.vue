@@ -38,6 +38,8 @@ export default {
 
     @$vrfTinyMCE.TinyMCE.init(options)
 
+    @$nextTick => @invalidate()
+
   beforeDestroy: ->
     $(@$refs.tiny).tinyMCE('destroy')
 
@@ -45,9 +47,11 @@ export default {
     value: ->
       return unless @editor
 
-      @editor.setContent(@value) if @editor?.getContent?() != @value
+      @invalidate()
 
   methods:
+    invalidate: ->
+      @editor.setContent(@value) if @editor?.getContent?() != @value
     onInput: debounce(
         (content) ->
           @$emit 'input', content
