@@ -21,7 +21,7 @@
   },
   "dependencies": {
     "lodash.debounce": "^4.0.8",
-    "vrf": "^0.7.3"
+    "vrf": "^0.10.0"
   },
   "devDependencies": {
     "autoprefixer": "^7.1.2",
