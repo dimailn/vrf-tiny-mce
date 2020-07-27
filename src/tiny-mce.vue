@@ -34,11 +34,12 @@ export default {
         editor.on('input', (e) =>
           @onInput editor.getContent()
         )
+
+        @invalidate()
     }
 
     @$vrfTinyMCE.TinyMCE.init(options)
 
-    @$nextTick => @invalidate()
 
   beforeDestroy: ->
     $(@$refs.tiny).tinyMCE('destroy')
