@@ -52,7 +52,7 @@ export default {
 
   methods:
     invalidate: ->
-      @editor.setContent(@value) if @editor?.getContent?() != @value
+      @editor.setContent(@value) if @value? && @editor?.getContent?() != @value
     onInput: debounce(
         (content) ->
           @$emit 'input', content
