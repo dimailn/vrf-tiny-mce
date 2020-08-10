@@ -5,12 +5,11 @@
 </template>
 
 <script lang="coffee">
-import {descriptors} from 'vrf'
 import TinyMce from './tiny-mce'
 
 
 export default {
-  extends: descriptors.input
+  vrfParent: 'input'
   components: {
     TinyMce
   }
