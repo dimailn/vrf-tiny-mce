@@ -1,6 +1,6 @@
 <template>
 
-<tiny-mce v-model="value" />
+<tiny-mce v-model="$value" />
 
 </template>
 
@@ -13,7 +13,6 @@ export default {
   components: {
     TinyMce
   }
-
 }
 
 </script>
