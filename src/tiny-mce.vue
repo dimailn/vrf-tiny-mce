@@ -42,7 +42,7 @@ export default {
 
 
   beforeDestroy: ->
-    $(@$refs.tiny).tinyMCE('destroy')
+    @editor?.destroy()
 
   watch:
     value: ->
